@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/yevgeny/Documents/FlightRecorder/FlightRecorder/build/intermediates/bundles/debug/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="ClipIndexTag"/>
+    <string name="app_name" translatable="false">Flight Recorder</string>
+    <string name="launcher_name" translatable="false">@string/app_name</string>
+    <string name="left"><![CDATA[<]]></string>
+    <string name="notification_recording_subtitle">Tap to submit issue with screen recording</string>
+    <string name="notification_recording_title">Recording</string>
+    <string name="recording_notification">Recording Notification</string>
+    <string name="right"><![CDATA[>]]></string>
+    <string name="title_activity_stop">Submit</string>
+</resources>
