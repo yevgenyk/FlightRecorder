@@ -23,7 +23,7 @@ Just a handful of classes. It's anti-bloatware.
 The code is based on Android's MediaProjectionManager which means this library is compatible with Lollipop and up.
 
 ### Getting started
-1. Clone the repo and build the aar. Or include it as a module in your Android Studio project
+Clone the repo and build the aar. Or include it as a module in your Android Studio project
 ```java
 try {
 			String myApp = "App123";
@@ -57,7 +57,7 @@ try {
 }
 ```
 
-1. And then when user allows screen casting
+And then when user allows screen casting
 ```java
 @Override protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
