@@ -24,7 +24,8 @@ The code is based on Android's MediaProjectionManager which means this library i
 
 ### Getting started
 1. Clone the repo and build the aar. Or include it as a module in your Android Studio project
-    try {
+```java
+try {
 			String myApp = "App123";
             File picturesDir = Environment.getExternalStoragePublicDirectory(DIRECTORY_MOVIES);
             File outputRoot = new File(picturesDir, myApp);
@@ -53,11 +54,12 @@ The code is based on Android's MediaProjectionManager which means this library i
         }
         catch (Exception e) {
             Log.i("", "flight recorder init error:", e);
-        }
-
+}
+```
 
 1. And then when user allows screen casting
-    @Override protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+```java
+@Override protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
         super.onActivityResult(requestCode, resultCode, data);
 
@@ -73,19 +75,23 @@ The code is based on Android's MediaProjectionManager which means this library i
 				Log.i("", "User failed to allow screen capture");
             }
         }
-    }
+}
+```
 
 ### Gradle
 At the time of writing the gradle syntax for including an aar
-
-    compile(name:'FlightRecorder-release', ext:'aar')
+```
+compile(name:'FlightRecorder-release', ext:'aar')
+```
 
 And also tell gradle where to find it
-    repositories{
-        flatDir{
-            dirs 'libs'
-        }
+```
+repositories{
+    flatDir{
+        dirs 'libs'
     }
+}
+```
 
 ### How it works
 The library continuously rolls a series of short clips. A max of about 4 is maintained. All clips are uploaded and the server is meant to string them together.
